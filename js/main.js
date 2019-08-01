@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     var imageUrl = "/img/bgmain.jpg";
 
-    $("#main").css("background-image", "url(" + imageUrl + ")");
+    // $("#main").css("background-image", "url(" + imageUrl + ")");
     var navHeight = $('.header').css('height');
 
     $('.sidebar').css('top', navHeight);
@@ -24,6 +24,11 @@ $(document).ready(function() {
             click = 0;
         }
 
-    })
+    });
+    // $(window).scroll(function() {
+    //     var scrolltop = $(window).scrollTop() / 10;
+
+    //     $('#main').css({})
+    // });
 
 });

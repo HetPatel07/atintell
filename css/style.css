@@ -15,7 +15,8 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 3s all;
+    transition: 1s all;
+    transition-timing-function: linear;
 }
 
 .mainTransform {
@@ -57,9 +58,15 @@ nav span {
 .content img {
     height: 143px;
     width: 232px;
+    opacity: 0;
+    transition-duration: .5s;
+    transition-timing-function: linear;
 }
 
 .content h2 {
+    opacity: 0;
+    transition-delay: .2s;
+    transition-duration: 1.5s;
     margin-top: 55px;
     margin-bottom: 0;
     padding: 20px 0 0 0;
@@ -85,6 +92,13 @@ nav span {
     font-weight: 400;
     border: 10px solid #fdfdfe;
     color: #616a7a;
+}
+
+.content h4 {
+    transform: translateY(-20px);
+    opacity: 0;
+    transition-delay: 1.5s;
+    transition-duration: .5s;
 }
 
 
