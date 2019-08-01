@@ -1,0 +1,243 @@
+@font-face {
+    font-family: firstfont;
+    src: url(/font/LeagueGothic-Regular.otf);
+}
+
+@font-face {
+    font-family: Helvetica;
+    src: url(/font/Helvetica-Normal.ttf);
+}
+
+.main {
+    width: 100%;
+    background: url('/img/main.jpg');
+    background-position: top center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 3s all;
+}
+
+.mainTransform {
+    transform: translateX(0);
+    transition: .2s all;
+    transition-timing-function: linear;
+    height: 100vh;
+}
+
+.header {
+    z-index: 111;
+    top: 0;
+    left: 0;
+    background-color: #0e1521;
+    padding: 10px;
+}
+
+nav a img {
+    max-width: 51px;
+    height: 21px;
+}
+
+nav span {
+    float: right;
+}
+
+
+/* main content part */
+
+.content {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content img {
+    height: 143px;
+    width: 232px;
+}
+
+.content h2 {
+    margin-top: 55px;
+    margin-bottom: 0;
+    padding: 20px 0 0 0;
+    font-family: firstfont;
+    line-height: 66px;
+}
+
+.content h2 span {
+    font-size: 68px;
+    font-weight: 400;
+    border: 10px solid #fdfdfe;
+    padding: 2px 25px 0 25px;
+    display: inline-block;
+}
+
+.content h4 span {
+    position: relative;
+    top: -10px;
+    display: inline-block;
+    font-family: firstfont;
+    background: #fdfdfe;
+    font-size: 28px;
+    font-weight: 400;
+    border: 10px solid #fdfdfe;
+    color: #616a7a;
+}
+
+
+/* side bar */
+
+.sidebarmain {
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: block;
+    overflow: hidden;
+}
+
+.sidebarmain1 {
+    display: block;
+}
+
+.sidebar {
+    /* width: 0; */
+    /* overflow: hidden; */
+    background: #1d2737;
+    position: relative;
+    text-transform: capitalize;
+    transform: translateX(100%);
+    list-style: none;
+    transition: .2s all;
+    transition-timing-function: linear;
+}
+
+.transform {
+    transform: translateX(0%);
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.sidebar li a {
+    padding: 8px 10px;
+    border-bottom: 1px dashed #3d4859;
+    color: #fdfdfe;
+    font-size: 13px;
+    display: block;
+}
+
+.sidebar li a:hover {
+    color: #5e7c9d;
+}
+
+
+/*application technology start */
+
+.apptechmain h2 span {
+    font-size: 68px;
+    text-transform: uppercase;
+    padding: 8px 25px 8px 25px;
+}
+
+.apptechmain .content .contentpara {
+    position: relative;
+    top: -10px;
+}
+
+.contentpara {
+    background-color: #fff;
+    width: 750px;
+    padding: 25px;
+}
+
+.contentpara p {
+    font-size: 13px;
+    font-weight: 400;
+    color: #616a7a;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    line-height: 22px;
+    padding-right: 15px;
+}
+
+.contentpara h2 {
+    line-height: 107px;
+}
+
+.contentpara h2 span {
+    font-size: 130px !important;
+    color: #616a7a;
+    padding: 0;
+    padding-right: 5px;
+    border: 0;
+}
+
+.contentpara h4 {
+    line-height: 35px;
+}
+
+.contentpara h4 span {
+    top: 0;
+    font-size: 32px !important;
+    color: #616a7a;
+    text-align: left;
+    border: 0;
+}
+
+.contentpara h2,
+.contentpara h4 {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* speech part start */
+
+.speech {
+    background: #0e1521;
+    float: right;
+    width: 400px;
+    padding: 18px 20px;
+    position: relative;
+    top: -10px;
+    left: 20%;
+}
+
+.speech span {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+}
+
+.speech span:nth-of-type(1) {
+    top: 0;
+    left: -30px;
+    background-image: url(/img/speech-open.png);
+}
+
+.speech span:nth-of-type(2) {
+    bottom: 0;
+    right: -30px;
+    background-image: url(/img/speech-close.png);
+}
+
+.speech p {
+    font-family: Helvetica;
+    text-align: left;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 0;
+}
+
+.speech p strong {
+    color: #5e7c9d;
+    font-weight: bold;
+}
