@@ -30,7 +30,7 @@
         </nav>
     </div>
     <div class="container-fluid main p-0" id="main">
-        <div class="row text-light align-items-center justify-content-center m-0 p-0">
+        <div class="row text-light align-items-center justify-content-center m-0 p-0 bgImgMain">
 
             <!-- sidebar Prt -->
             <div class="col-2 p-0 h-100 sidebarmain">
@@ -63,18 +63,19 @@
 
             <!-- side bar over -->
             <!-- home page  -->
-            <div class="col-12 mainTransform">
+            <div class="col-12 mainTransform mainTransform1">
                 <div class="content">
                     <img src="img/atl-logo-large.png" alt="">
                     <h2><span>WELCOME</span></h2>
                     <h4><span>PLEASE SCROLL DOWN</span></h4>
+                    <span class="dash-bottom"></span>
                 </div>
             </div>
             <!-- home page over -->
 
             <!-- appliance technology start -->
 
-            <div class="col-12 mainTransform apptechmain">
+            <div class="col-12 mainTransform apptechmain pb-0">
                 <div class="content">
                     <h2><span>appliance technology</span></h2>
                     <div class="contentpara d-flex align-items-center">
@@ -100,7 +101,7 @@
     <!-- SCRIPTS -->
     <!-- JQuery -->
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-
+    <script src="js/CSSRulePlugin.js"></script>
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
@@ -108,19 +109,38 @@
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
     <script src="js/main.js"></script>
 
     <script>
-        var anim = TweenMax.to("#main", .3, {
-            backgroundImage: "url(/img/main.jpg)",
-            transitionDelay: "0"
-        });
-        TweenMax.to("#main", 1.5, {
+        var rule = CSSRulePlugin.getRule(".main::after");
+        var windowHeight = parseInt($(window).innerHeight()) / 2;
+        var firstTween = new TimelineMax();
+        firstTween
+            .set(rule, {
+                opacity: 0,
+                transitionDelay: 0
+            })
+            .to(rule, .01, {
+                opacity: 1,
+                transitionDelay: 0
+            })
+        var controller = new ScrollMagic.Controller();
+
+        var scene1 = new ScrollMagic.Scene({
+                triggerElement: '.mainTransform1',
+                duration: '100%',
+                offset: windowHeight
+            })
+            .setTween(firstTween)
+            .addIndicators()
+            .addTo(controller);
+        TweenMax.to("#main", .3, {
             backgroundImage: "url(/img/bgmain.jpg)",
-            transitionDelay: "2s"
+            transitionDelay: "0s"
         });
         TweenMax.to(".content img", 1.5, {
             opacity: "1",
@@ -131,20 +151,14 @@
         TweenMax.to(".content h4", 1.5, {
             y: "0",
             opacity: "1",
-        });
-        var controller = new ScrollMagic.Controller();
+            transitionDelay: "1"
+        }), "-=1";
+        TweenMax.to(".content .dash-bottom", 1.5, {
+            y: "0",
+            transitionDelay: ".5s",
+            opacity: 1,
 
-        // create a scene
-        new ScrollMagic.Scene({
-                triggerElement: '.apptechmain',
-                offset: "200px",
-                duration: ""
-            })
-            .setTween(anim)
-            // pins the element for the the scene's duration
-            .addIndicators()
-            // .setPin("#main")
-            .addTo(controller); // assign the scene to the controller
+        });
 
         // var blockTween = new TweenMax.to('.inner', 100, {
         //     background: " url('/img/main.jpg')",
