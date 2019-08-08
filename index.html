@@ -74,23 +74,36 @@
             <!-- home page over -->
 
             <!-- appliance technology start -->
-
-            <div class="col-12 mainTransform apptechmain pb-0">
-                <div class="content">
-                    <h2><span>appliance technology</span></h2>
-                    <div class="contentpara d-flex align-items-center">
-                        <p class=""><span>
+            <div class="col-12 px-0">
+                <div class="wrapMain">
+                    <div class="wrapInner">
+                        <div class="mainTransform apptechmain w-100 pb-0 d-inline-block">
+                            <div class="content">
+                                <h2><span>appliance technology</span></h2>
+                                <div class="contentpara overflow-auto" style="white-space: initial">
+                                    <p class="float-left"><span>
                                 Appliance Technology offers a broad range of appliance maintenance services to domestic and commercial clients. Our large workshop, located in Preston, Lancashire, allows us to carryout appliance rework tasks for rental and leasing companies nationwide. Specialist testing equipment and professional facilities enable us to evaluate electrical products and white goods on behalf of major retailers. With a 30-strong team of specialist engineers we are trusted suppliers of appliance maintenance contracts to companies and organisations across a range of sectors.
                         </span></p>
-                        <div class="contentpararight d-flex align-items-start">
-                            <h2 class=""><span>15</span></h2>
-                            <h4 class=""><span>REPAIRS EVERY HOUR</span></h4>
+                                    <div class="contentpararight d-flex align-items-start float-right">
+                                        <h2 class="mainText"><span id="mainText">15</span></h2>
+                                        <h4 class=""><span>REPAIRS<br> EVERY<br> HOUR</span></h4>
+                                    </div>
+                                </div>
+                                <div class="speech" style="white-space: initial">
+                                    <span></span>
+                                    <p>Appliance Technology Limited is paramount to us being able to provide our customers with quality, own-brand electrical and white goods, and therefore principle to maintaining our excellent reputation.<br><strong>HIGHSTREET RETAILER</strong></p>
+                                    <span></span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="speech">
-                        <span></span>
-                        <p>Appliance Technology Limited is paramount to us being able to provide our customers with quality, own-brand electrical and white goods, and therefore principle to maintaining our excellent reputation.<br><strong>HIGHSTREET RETAILER</strong></p>
-                        <span></span>
+                        <!-- appliacnes part  -->
+                        <section class="d-inline-block w-100" style="vertical-align: top">
+                            <div class="appliancesPart bg-light ">
+                                <div class="appliancesContent">
+                                    <h1>hllo world</h1>
+                                </div>
+                            </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -116,49 +129,11 @@
     <script src="js/main.js"></script>
 
     <script>
-        var rule = CSSRulePlugin.getRule(".main::after");
-        var windowHeight = parseInt($(window).innerHeight()) / 2;
-        var firstTween = new TimelineMax();
-        firstTween
-            .set(rule, {
-                opacity: 0,
-                transitionDelay: 0
-            })
-            .to(rule, .01, {
-                opacity: 1,
-                transitionDelay: 0
-            })
-        var controller = new ScrollMagic.Controller();
-
-        var scene1 = new ScrollMagic.Scene({
-                triggerElement: '.mainTransform1',
-                duration: '100%',
-                offset: windowHeight
-            })
-            .setTween(firstTween)
-            .addIndicators()
-            .addTo(controller);
-        TweenMax.to("#main", .3, {
-            backgroundImage: "url(/img/bgmain.jpg)",
-            transitionDelay: "0s"
-        });
-        TweenMax.to(".content img", 1.5, {
-            opacity: "1",
-        });
-        TweenMax.to(".content h2", 1.5, {
-            opacity: "1",
-        });
-        TweenMax.to(".content h4", 1.5, {
-            y: "0",
-            opacity: "1",
-            transitionDelay: "1"
-        }), "-=1";
-        TweenMax.to(".content .dash-bottom", 1.5, {
-            y: "0",
-            transitionDelay: ".5s",
-            opacity: 1,
-
-        });
+        // var speechTween = TweenMax.to(".speech", 1.5, {
+        //     transform: "translateX(0)",
+        //     transitionDelay: ".5s",
+        //     opacity: 1,
+        // });
 
         // var blockTween = new TweenMax.to('.inner', 100, {
         //     background: " url('/img/main.jpg')",

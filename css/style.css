@@ -16,9 +16,9 @@
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 1s all;
     transition-timing-function: linear;
     z-index: 1;
+    transition: 1s;
 }
 
 .main::after {
@@ -36,7 +36,6 @@
     opacity: 0;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: 1s all;
     transition-timing-function: linear;
 }
 
@@ -213,10 +212,12 @@ nav span {
     padding: 0;
     line-height: 22px;
     padding-right: 15px;
+    width: 78%;
 }
 
 .contentpara h2 {
     line-height: 107px;
+    width: 78px;
 }
 
 .contentpara h2 span {
@@ -229,6 +230,7 @@ nav span {
 
 .contentpara h4 {
     line-height: 35px;
+    top: 0;
 }
 
 .contentpara h4 span {
@@ -256,6 +258,9 @@ nav span {
     position: relative;
     top: -10px;
     left: 20%;
+    transform: translateX(50%);
+    transition: 1s all;
+    opacity: 0;
 }
 
 .speech span {
@@ -288,4 +293,23 @@ nav span {
 .speech p strong {
     color: #5e7c9d;
     font-weight: bold;
+}
+
+
+/* appliances Part */
+
+.appliancesPart {
+    background-color: #fff;
+    height: 100vh;
+}
+
+.wrapInner {
+    white-space: nowrap;
+    position: sticky !important;
+    right: 0 !important;
+    top: 0 !important;
+    left: 0 !important;
+    min-width: 100% !important;
+    height: 100vh !important;
+    font-size: 0;
 }
