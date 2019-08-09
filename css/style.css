@@ -143,6 +143,7 @@ nav span {
     top: 0;
     display: block;
     overflow: hidden;
+    width: 250px;
 }
 
 .sidebarmain1 {

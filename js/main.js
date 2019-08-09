@@ -51,16 +51,14 @@ $(document).ready(function() {
         .on("progress end", updateBox)
         .addTo(controller);
     var scene3 = new ScrollMagic.Scene({
-            triggerElement: '.apptechmain',
+            triggerElement: '.wrapInner',
             offset: windowHeight,
-            duration: '10px'
         })
         .setTween(speechTween)
-        .addIndicators()
         .addTo(controller);
     TweenMax.to("#main", 1, {
         backgroundImage: "url(/img/bgmain.jpg)",
-        transitionDelay: "0s"
+        transitionDelay: ".5s"
     });
     TweenMax.to(".content img", 1.5, {
         opacity: "1",

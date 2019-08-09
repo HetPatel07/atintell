@@ -1,0 +1,41 @@
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #main {
+        height: 100%;
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    .mainTransform {
+        height: 928px !important;
+        padding: 0 0 25px 0;
+    }
+    /* tablet fade */
+    /* .firstFade {
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        background: url(/img/bgmain.jpg);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+    } */
+}
+
+
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    /* Styles */
+}
+
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
