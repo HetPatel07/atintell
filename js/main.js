@@ -99,8 +99,8 @@ $(document).ready(function() {
         })
         .setTween(tranformTween)
         .setPin(".wrapInner")
-        .addIndicators()
-        .addTo(controller);
+
+    .addTo(controller);
 
 
     // scene 5 start
@@ -120,8 +120,8 @@ $(document).ready(function() {
             .to(elemnts[0], 1, {
                 height: '203px',
             }))
-        .addIndicators()
-        .addTo(controller);
+
+    .addTo(controller);
 
     // scene 6
 
@@ -138,8 +138,8 @@ $(document).ready(function() {
             .to(elemnts[1], 1, {
                 height: '267px',
             }))
-        .addIndicators()
-        .addTo(controller);
+
+    .addTo(controller);
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
@@ -154,8 +154,8 @@ $(document).ready(function() {
             .to(elemnts[2], 1, {
                 height: '184px',
             }))
-        .addIndicators()
-        .addTo(controller);
+
+    .addTo(controller);
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
@@ -170,8 +170,8 @@ $(document).ready(function() {
             .to(elemnts[3], 1, {
                 height: '205px',
             }))
-        .addIndicators()
-        .addTo(controller);
+
+    .addTo(controller);
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
@@ -186,8 +186,8 @@ $(document).ready(function() {
             .to(elemnts[4], 1, {
                 height: '225px',
             }))
-        .addIndicators()
-        .addTo(controller);
+
+    .addTo(controller);
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
@@ -202,8 +202,8 @@ $(document).ready(function() {
             .to(elemnts[5], 1, {
                 height: '225px',
             }))
-        .addIndicators()
-        .addTo(controller);
+
+    .addTo(controller);
 
 
     TweenMax.to("#main", 1, {

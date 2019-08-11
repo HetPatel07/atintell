@@ -8,6 +8,10 @@
     src: url(/font/Helvetica-Normal.ttf);
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .main {
     position: relative;
     width: 100%;
