@@ -1,0 +1,102 @@
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .main {
+        background: #0e1521 url(/img/mobile-bg.jpg) repeat top center scroll !important;
+    }
+    .main::after {
+        content: '';
+        height: 0 !important;
+        width: 0 !important;
+    }
+    /* home main */
+    .mainTransform {
+        padding: 40px 0;
+        height: 100%;
+    }
+    /* home content */
+    .content {
+        transform: translate(-50%, 0);
+    }
+    .apptechmain .content {
+        top: 0;
+    }
+    .content img {
+        height: 99px;
+        width: 160px;
+        margin: 60px auto;
+    }
+    .content h2 {
+        margin-top: 0;
+        line-height: inherit;
+    }
+    .content h2 span {
+        font-size: 34px;
+        padding: 0px 18px 0 18px;
+        border: 5px solid #fdfdfe;
+        color: #fff;
+    }
+    .content h4 {
+        border: 0;
+        top: -5px;
+    }
+    .content h4 span {
+        font-size: 16px;
+        border: 0;
+        line-height: 16px;
+        padding: 5px 10px;
+    }
+    .dash-bottom {
+        height: 80px;
+        width: 2px;
+        border-right: 2px dashed #fdfdfe;
+    }
+    .wrapMain {
+        height: auto !important;
+    }
+    /* apptechmain content part */
+    .contentpara {
+        width: auto;
+        padding: 15px 20px;
+    }
+    .contentpara p {
+        font-size: 13px;
+        width: 100%;
+        padding-right: 0;
+    }
+    .speech {
+        transform: translateX(0);
+        margin: 0 30px;
+        width: auto;
+        left: 0;
+        color: #fff;
+        opacity: 1 !important;
+    }
+    .contentpararight {
+        line-height: normal;
+        font-size: 34px !important;
+        line-height: 34px;
+    }
+    .contentpara h2 span {
+        color: #616a7a;
+        font-size: 34px !important;
+    }
+    .contentpara h4 span {
+        color: #616a7a;
+        font-size: 34px !important;
+    }
+}
+
+
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+    /* Styles */
+}
+
+
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+    /* Styles */
+}

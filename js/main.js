@@ -55,6 +55,7 @@ $(document).ready(function() {
             offset: windowHeight,
         })
         .setTween(speechTween)
+        .addIndicators()
         .addTo(controller);
     TweenMax.to("#main", 1, {
         backgroundImage: "url(/img/bgmain.jpg)",
