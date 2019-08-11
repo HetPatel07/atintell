@@ -193,6 +193,10 @@ nav span {
     padding: 8px 25px 8px 25px;
 }
 
+.apptechH4 {
+    width: 88px;
+}
+
 .apptechmain .content .contentpara {
     position: relative;
     top: -10px;
@@ -213,7 +217,7 @@ nav span {
     padding: 0;
     line-height: 22px;
     padding-right: 15px;
-    width: 78%;
+    width: 76%;
 }
 
 .contentpara h2 {
@@ -294,14 +298,7 @@ nav span {
 .speech p strong {
     color: #5e7c9d;
     font-weight: bold;
-}
-
-
-/* appliances Part */
-
-.appliancesPart {
-    background-color: #fff;
-    height: 100vh;
+    display: block;
 }
 
 .wrapInner {
@@ -311,6 +308,69 @@ nav span {
     top: 0 !important;
     left: 0 !important;
     min-width: 100% !important;
-    height: 100vh !important;
     font-size: 0;
+}
+
+
+/* appliances Part */
+
+.appliancesPart {
+    width: 2670px !important;
+    padding: 100px 400px 50px 400px;
+    background: url(/img/diagonal-bg.png) no-repeat center center scroll;
+    overflow: auto;
+}
+
+.appliancesContent {
+    padding: 40px 0px 0px 40px;
+    position: relative;
+}
+
+.appbox {
+    width: 265px;
+    position: relative;
+    float: left;
+    margin-right: 40px;
+}
+
+.appbox h3 span {
+    margin: auto;
+    font-family: firstfont;
+    color: #0e1521;
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+    border: 8px solid #0e1521;
+    width: 220px;
+    display: block;
+    padding: 4px 0;
+}
+
+.appbox p {
+    position: absolute;
+    left: 50%;
+    top: 44px;
+    transform: translateX(-50%);
+    white-space: initial;
+    word-break: break-word;
+    /* padding: 12px 20px 18px 20px; */
+    overflow: hidden;
+    height: 0;
+    width: 220px;
+    color: #fdfdfe;
+    background-color: #0e1521;
+    display: block;
+    border-bottom: 8px solid #5e7c9d;
+    transition: 1s all;
+}
+
+.appbox span {
+    display: inline-block;
+    padding: 12px 20px 18px 20px;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.appbox img {
+    width: 265px;
 }
