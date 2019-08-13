@@ -109,6 +109,55 @@
         color: #616a7a;
         font-size: 34px !important;
     }
+    /* appliances part */
+    .appliancesMain {
+        padding: 40px 0;
+        overflow: auto;
+    }
+    .appliancesPart {
+        width: 1470px !important;
+        padding: 0;
+        background: #e5e8e8;
+    }
+    .appliancesContent {
+        border: 5px solid #fdfdfe;
+        padding: 20px 0 0 20px;
+    }
+    .appbox {
+        width: 215px;
+        margin-right: 25px;
+    }
+    .appbox p {
+        font-size: 12px;
+        height: auto !important;
+        color: #333;
+        background: transparent;
+        position: relative;
+        top: 0;
+        padding: 0;
+        font-family: "helvetica";
+        border-bottom: 0;
+        margin-top: 10px;
+    }
+    .appbox p span {
+        padding: 0 0;
+    }
+    .appbox h3 span {
+        border: 5px solid #0e1521;
+    }
+    .appbox img {
+        width: 150px;
+    }
+    .swipeImg {
+        width: 65px;
+        height: 42px;
+        display: block;
+        background: url(/img/swipe-right.png) no-repeat 0 0 scroll;
+        background-size: 65px 42px;
+        position: absolute;
+        bottom: 25px;
+        left: 20px;
+    }
 }
 
 

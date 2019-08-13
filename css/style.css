@@ -320,12 +320,13 @@ nav span {
 
 .appliancesPart {
     width: 2670px !important;
-    padding: 100px 400px 50px 400px;
+    padding: 116px 400px 50px 400px;
     background: url(/img/diagonal-bg.png) no-repeat center center scroll;
     overflow: auto;
 }
 
 .appliancesContent {
+    overflow: auto;
     padding: 40px 0px 0px 40px;
     position: relative;
 }
@@ -365,11 +366,12 @@ nav span {
     display: block;
     border-bottom: 8px solid #5e7c9d;
     transition: 1s all;
+    margin-bottom: 0;
 }
 
 .appbox span {
     display: inline-block;
-    padding: 12px 20px 18px 20px;
+    padding: 12px 24px 18px 20px;
     font-size: 12px;
     line-height: 21px;
 }
