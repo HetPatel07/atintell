@@ -95,9 +95,11 @@ $(document).ready(function() {
             triggerElement: '.wrapInner',
             offset: 0,
             duration: appliancesPart,
+            ease: Quad.linear,
             triggerHook: 0
         })
         .setTween(tranformTween)
+        .addIndicators()
         .setPin(".wrapInner")
 
     .addTo(controller);
@@ -109,101 +111,62 @@ $(document).ready(function() {
     var scene5 = new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
             offset: windowHeight,
-            duration: "150px",
+            duration: "250px",
             triggerHook: 0
         })
-        .setTween(appHeight
-            .set(elemnts[0], {
-                height: '0',
-                transition: "1s all",
-            })
-            .to(elemnts[0], 1, {
-                height: '203px',
-            }))
+        .setTween(TweenMax.from(elemnts[0], 1, { height: "0px", ease: Quad.easeOut }))
+        .addIndicators()
+        .addTo(controller);
 
-    .addTo(controller);
-
-    // scene 6
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
             offset: windowHeight + 150,
-            duration: "150px",
+            duration: "250px",
             triggerHook: 0
         })
-        .setTween(appHeight1
-            .set(elemnts[1], {
-                height: '0',
-            })
-            .to(elemnts[1], 1, {
-                height: '267px',
-            }))
+        .setTween(TweenMax.from(elemnts[1], 1, { height: "0px", ease: Quad.easeOut }))
 
     .addTo(controller);
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
             offset: windowHeight + 300,
-            duration: "150px",
+            duration: "250px",
             triggerHook: 0
         })
-        .setTween(appHeight2
-            .set(elemnts[2], {
-                height: '0',
-            })
-            .to(elemnts[2], 1, {
-                height: '184px',
-            }))
+        .setTween(TweenMax.from(elemnts[2], 1, { height: "0px", ease: Quad.easeOut }))
 
     .addTo(controller);
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
             offset: windowHeight + 450,
-            duration: "150px",
+            duration: "250px",
             triggerHook: 0
         })
-        .setTween(appHeight3
-            .set(elemnts[3], {
-                height: '0',
-            })
-            .to(elemnts[3], 1, {
-                height: '205px',
-            }))
+        .setTween(TweenMax.from(elemnts[3], 1, { height: "0px", ease: Quad.easeOut }))
 
     .addTo(controller);
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
             offset: windowHeight + 600,
-            duration: "150px",
+            duration: "250px",
             triggerHook: 0
         })
-        .setTween(appHeight4
-            .set(elemnts[4], {
-                height: '0',
-            })
-            .to(elemnts[4], 1, {
-                height: '225px',
-            }))
+        .setTween(TweenMax.from(elemnts[4], 1, { height: "0px", ease: Quad.easeOut }))
 
     .addTo(controller);
 
     new ScrollMagic.Scene({
             triggerElement: '.wrapInner',
             offset: windowHeight + 750,
-            duration: "150px",
+            duration: "250px",
             triggerHook: 0
         })
-        .setTween(appHeight5
-            .set(elemnts[5], {
-                height: '0',
-            })
-            .to(elemnts[5], 1, {
-                height: '225px',
-            }))
-
-    .addTo(controller);
+        .setTween(TweenMax.from(elemnts[5], 1, { height: "0px", ease: Quad.easeOut }))
+        .addTo(controller);
 
 
     TweenMax.to("#main", 1, {
